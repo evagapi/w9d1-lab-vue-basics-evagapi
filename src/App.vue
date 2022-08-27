@@ -1,6 +1,7 @@
 <template>
   <NavigationBar></NavigationBar>
-
+  <p>2 + 2 : {{ 2 + 2 }}</p>
+  <p>print: {{ print() }}</p>
   <Footer></Footer>
 </template>
 
@@ -13,6 +14,11 @@ export default {
   components: {
     NavigationBar,
     Footer,
+  },
+  methods: {
+    print() {
+      return "a string";
+    },
   },
 };
 </script>
