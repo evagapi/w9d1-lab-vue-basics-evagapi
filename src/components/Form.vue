@@ -43,6 +43,18 @@
         <Checkbox id="pecorino" label="Pecorino" v-model="pecorino" />
         <Checkbox id="parmigiano" label="Parmigiano" v-model="parmigiano" />
       </fieldset>
+      <fieldset class="mb-4">
+        <label for="enter-a-number" class="mr-2 w-30 inline-block"
+          >Enter a number:
+        </label>
+        <input
+          type="number"
+          id="enter-a-number"
+          placeholder="Number"
+          v-model="number"
+          class="p-4 w-80 rounded"
+        />
+      </fieldset>
     </form>
     <div>
       <h2 class="text-lg font-bold mb-2">Two-way Data Binding:</h2>
@@ -53,6 +65,7 @@
         <p>You like Stilton: {{ stilton }}</p>
         <p>You like Pecorino: {{ pecorino }}</p>
         <p>You like Parmigiano: {{ parmigiano }}</p>
+        <p>Your number is: <EvenOrOdd :number="number" /></p>
       </div>
     </div>
   </div>
@@ -60,6 +73,7 @@
 <script>
 import Checkbox from "./Checkbox.vue";
 import Input from "./Input.vue";
+import EvenOrOdd from "./EvenOrOdd.vue";
 
 export default {
   data() {
@@ -70,8 +84,9 @@ export default {
       stilton: false,
       pecorino: false,
       parmigiano: false,
+      number: 0,
     };
   },
-  components: { Checkbox, Input },
+  components: { Checkbox, Input, EvenOrOdd },
 };
 </script>
