@@ -4,6 +4,7 @@
     <p class="bg-teal-100 p-4 mb-8">2 + 2 : {{ 2 + 2 }}</p>
     <p class="bg-pink-100 p-4 mb-8">print: {{ print() }}</p>
     <Form></Form>
+    <Pokedex />
   </main>
   <Footer></Footer>
 </template>
@@ -12,6 +13,7 @@
 import NavigationBar from "./components/NavigationBar.vue";
 import Footer from "./components/Footer.vue";
 import Form from "./components/Form.vue";
+import Pokedex from "./components/Pokedex.vue";
 
 export default {
   name: "App",
@@ -19,6 +21,7 @@ export default {
     NavigationBar,
     Footer,
     Form,
+    Pokedex,
   },
   methods: {
     print() {
