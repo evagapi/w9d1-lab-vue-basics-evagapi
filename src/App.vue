@@ -5,6 +5,7 @@
     <p class="bg-pink-100 p-4 mb-8">print: {{ print() }}</p>
     <Form></Form>
     <Pokedex />
+    <MagicBackground />
   </main>
   <Footer></Footer>
 </template>
@@ -14,6 +15,7 @@ import NavigationBar from "./components/NavigationBar.vue";
 import Footer from "./components/Footer.vue";
 import Form from "./components/Form.vue";
 import Pokedex from "./components/Pokedex.vue";
+import MagicBackground from "./components/MagicBackground.vue";
 
 export default {
   name: "App",
@@ -22,6 +24,7 @@ export default {
     Footer,
     Form,
     Pokedex,
+    MagicBackground,
   },
   methods: {
     print() {
